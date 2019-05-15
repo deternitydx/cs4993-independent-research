@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{diagbox}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{mdframed}
+\usepackage{epstopdf}
+\usepackage[font=footnotesize]{caption}
+\usepackage{subcaption}
+\usepackage{cite}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{bbding}
+\usepackage[hidelinks]{hyperref}
+\usepackage{verbatim}
+\usepackage{comment}
+\usepackage{pbox}
+\graphicspath{{figures/}{pictures/}{images/}{./}} % where to search for the images
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.eps} % for pdflatex we expect .pdf, .png, or .jpg files
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\newcommand*{\SignatureAndDate}[1]{
+    
+    \vskip 0.2in
+    \par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.5in]{\hrulefill}\\
+    \makebox[2.5in][l]{#1} \hfill\makebox[2in][l]{Date}
+
+}
+\newcommand*{\field}[1]{
+    \makebox[#1]{\hrulefill} 
+}
+
+\newcommand{\note}[1]{{\color{blue} \textit{note: #1}}}
+\newcommand{\done}{{\color{green} \CheckmarkBold}}
+\newcommand{\timeline}[1]{{\color{red} -- #1}}
+\begin{document}
+
+\textbf{CS 4993: Independent Research}
+
+\textbf{Instructor:} \\
+Email: \\ %\url{}\\
+Office: \\ %Rice Hall\\
+
+\section*{Overview}
+
+\textbf{Research Project Description:} 
+
+\noindent\hrulefill
+
+\noindent\hrulefill
+
+\noindent\hrulefill
+
+\noindent\hrulefill
+
+\noindent\hrulefill
+
+\noindent\hrulefill
+
+
+\textbf{Meeting Times:} For independent research, it is important for us to meet regularly to assess progress.  We will meet independently every \textbf{one} or \textbf{two} weeks at this time:
+
+\field{3in}
+
+\textbf{Research Objectives:} 
+\begin{itemize}
+    \item Gain background knowledge through reading related research papers.
+        \begin{itemize}
+            \item Reading at least \field{0.3in} papers
+            \item Create a bibliography in a research management software (BibTeX, BibDesk, JabRef, Mendeley, ...)
+            \item Write a short 1 paragraph summary of each paper read
+        \end{itemize}
+    \item Meet milestones as agreed in the Milestone section below
+    \item Produce a final research paper
+        \begin{itemize}
+            \item 5-7 page paper (8-10 page paper for larger groups)
+            \item Must cite references correctly from background reading
+            \item Following ACM or IEEE paper style
+            \item First draft due by the last day of class
+            \item Final version due \field{1in}
+        \end{itemize}
+\end{itemize}
+
+\newpage
+
+\textbf{Milestones:} We agree to the following milestones and deadlines throughout the semester.  They may be modified as our research gets underway, but any modifications must be agreed upon by me and updated in this document.
+
+\begin{tabular}{|c|c|c|}
+     \hline
+     Due Date & Milestone & To-Do List\\
+     \hline \hline
+     \pbox{2in}{\vspace{1cm}} & \hspace{2.5in} & \hspace{2.75in} \\
+      & & \\
+     & & \\
+     & & \\
+     & & \\
+     \hline
+     \pbox{2in}{\vspace{1cm}} & \hspace{2in} & \hspace{2in} \\
+     & & \\
+     & & \\
+     & & \\
+     & & \\
+     \hline
+     \pbox{2in}{\vspace{1cm}} & \hspace{2in} & \hspace{2in} \\
+     & & \\
+     & & \\
+     & & \\
+     & & \\
+     \hline
+     \pbox{2in}{\vspace{1cm}} & \hspace{2in} & \hspace{2in} \\
+     & & \\
+     & & \\
+     & & \\
+     & & \\
+     \hline
+     \pbox{2in}{\vspace{1cm}} & \hspace{2in} & \hspace{2in} \\
+     & & \\
+     & & \\
+     & & \\
+     & & \\
+     \hline
+     \pbox{2in}{\vspace{1cm}} & \hspace{2in} & \hspace{2in} \\
+     & & \\
+     & & \\
+     & & \\
+     & & \\
+     \hline
+\end{tabular}
+   
+   \newpage
+
+%\section*{Grading and Assignments}
+
+
+
+\textbf{Final Paper:} I strongly suggest that final papers be typeset with \LaTeX, a professional formatting system. Tutorials on how to use \LaTeX will be made available when the first written problem set is released. \LaTeX is easily installable on many computers: 
+\begin{itemize}
+    \item Cygwin (which you all saw in CS 216/2150) has \LaTeX packages that can be installed
+    \item MiKTeX provides a stand-alone installer for Windows and Mac, \url{miktex.org}
+    \item Ubuntu and CentOS provide TeXLive packages in their repos
+\end{itemize}
+I recommend using Overleaf, \url{http://overleaf.com}. It is an in-browser \LaTeX editor which behaves much like Google Docs. 
+
+\section*{Grades}
+
+Grades will be computed by the following formula:
+\begin{itemize}
+    \item $40\%$ Final Paper
+    \item $20\%$ Background readings and summaries
+    \item $40\%$ Milestones and deliverables
+\end{itemize}
+
+\section*{Additional Information}
+
+\textbf{Special Circumstances:} The University of Virginia strives to provide accessibility to all students. If you require an accommodation to fully access this course, please contact the Student Disability Access Center (SDAC) at (434) 243-5180 or \url{sdac@virginia.edu}. If you are unsure if you require an accommodation, or to learn more about their services, you may contact the SDAC at the number above or by visiting their website \url{http://studenthealth.virginia.edu/sdac}.
+
+\textbf{Religious Accommodations:} It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements.  Students who wish to request academic accommodation for a religious observance should submit their request in writing to me as far in advance as possible. If you have questions or concerns about academic accommodations for religious observance or religious beliefs, visit 
+
+\begin{center} 
+    \url{https://eocr.virginia.edu/accommodations-religious-observance}
+\end{center}
+
+or contact the University's Office for Equal Opportunity and Civil Rights (EOCR) at \url{UVAEOCR@virginia.edu} or 434-924-3200.  Accommodations do not relieve you of the responsibility for completion of any part of the coursework missed as the result of a religious observance.
+
+\textbf{Safe Environment:} The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. To that end, it is vital that you know two values that the University and I hold as critically important:
+ 
+\begin{enumerate}
+    \item Power-based personal violence will not be tolerated. 
+    \item Everyone has a responsibility to do their part to maintain a safe community on Grounds.
+\end{enumerate}
+
+If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website that describes reporting options and resources available -- \url{www.virginia.edu/sexualviolence}. 
+   
+As your professor and as a person, know that I care about you and your well-being and stand ready to provide support and resources as I can. As a faculty member, I am a responsible employee, which means that I am required by University policy and federal law to report what you tell me to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety and the safety of the University community. If you would rather keep this information confidential, there are Confidential Employees you can talk to on Grounds (See \url{http://www.virginia.edu/justreportit/confidential\_resources.pdf}). The worst possible situation would be for you or your friend to remain silent when there are so many here willing and able to help.
+
+\textbf{Well-being:} If you are feeling overwhelmed, stressed, or isolated, there are many individuals here who are ready and wanting to help. The Student Health Center offers Counseling and Psychological Services (CAPS) for all UVA students. Call 434-243-5150 (or 434-972-7004 for after hours and weekend crisis assistance) to get started and schedule an appointment. If you prefer to speak anonymously and confidentially over the phone, Madison House provides a HELP Line at any hour of any day: 434-295-8255.
+
+\section*{Agreements}
+
+We agree to be bound by this syllabus throughout our research this semester.
+
+\SignatureAndDate{Professor}
+\SignatureAndDate{Student}
+\SignatureAndDate{Student}
+%\SignatureAndDate{Student}
+
+
+\end{document}  
